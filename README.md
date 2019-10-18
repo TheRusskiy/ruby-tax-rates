@@ -4,8 +4,9 @@ Example Rails repo showcasing how to calculate US sales tax dynamically for any 
 
 ### TODO:
 - [x] Init repository
-- [ ] Importing zip codes and tax rates
+- [x] Importing zip codes and tax rates
 - [ ] Calculating tax rate based on coordinates
 - [ ] Deploy to Heroku
 - [ ] UI to request tax rate based on coordinates / zip
 - [ ] UI to update tax rate
+- [ ] Write usage examples to this readme
