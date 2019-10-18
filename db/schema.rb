@@ -12,8 +12,11 @@
 
 ActiveRecord::Schema.define(version: 2019_10_18_163712) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "zip_tax_rates", id: false, force: :cascade do |t|
-    t.text "zip", limit: 5, null: false
+    t.text "zip", null: false
     t.float "rate", null: false
     t.float "latitude"
     t.float "longitude"
