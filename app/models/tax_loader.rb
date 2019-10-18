@@ -11,6 +11,11 @@ class TaxLoader
       if attrs_array.length < 39000
         raise StandardError, "Zips are missing: #{attrs_array.length}"
       end
+      # make this runnable on free heroku instance
+      # since heroku has a 10k rows limit
+      if ENV['HEROKU']
+        attrs_array = attrs_array.first(9000)
+      end
       ZipTaxRate.transaction do
         ZipTaxRate.delete_all
         ZipTaxRate.insert_all(attrs_array)
