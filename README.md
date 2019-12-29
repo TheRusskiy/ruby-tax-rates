@@ -1,5 +1,7 @@
 # Ruby Tax Rates
 
+## This repo is a work in progress, currently trying to overcome dependence on 3rd party libraries
+
 ![Heroku](https://heroku-badge.herokuapp.com/?app=ruby-tax-rates)
 
 View this app live on https://ruby-tax-rates.herokuapp.com
